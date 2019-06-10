@@ -10,26 +10,29 @@
 </head>
 <body>
     <div class="container">
-        <h1>Home Page</h1>
+        <h1>Weather Application</h1>
         <div class="row">
             <div class="col-md-6">
                     <form>
                         <div class="form-group">
-                            <label>Enter the city: </label>
-                            <input type="text" id="city" placeholder="city?"/> </br>
-                            <label>Enter the state: </label>
-                            <input type="text" id="state" placeholder="state?"/> </br>
-                            <input type="submit" class="btn btn-success">
+                            <label>Enter the </label>
+                            <input type="text" id="city" placeholder="city"/> </br>
+                            <button type="button" id="button" class="btn btn-success">Get Weather</button>
                         </div>
                     </form>
                 </div>
             <div class="col-md-6">
-                <img src="https://images.unsplash.com/photo-1472145246862-b24cf25c4a36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="The weather">
+                <div id="summary">
+                    <p>The temperature is <span id="temp"></span> degrees Fahrenheit in <span id="loc"></span>.</p>
+                    <p>The temperature range is between <span id="min_temp"></span> and <span id="max_temp"></span> degrees Fahrenheit.</p>
+                    <p>Humidity: <span id="humidity"></span></p>
+                    <p>Type of Weather: <span id="weather"></span></p>
+                    <p>Description: <span id="description"></span></p>
+                    <img src="https://images.unsplash.com/photo-1472145246862-b24cf25c4a36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="The weather"> 
+                </div>
             </div>
         </div>
-        
-    </div>
-    
-    
+    </div> 
+    <script src="app.js"></script>
 </body>
 </html>

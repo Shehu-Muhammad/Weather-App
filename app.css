@@ -1,8 +1,27 @@
+
 .container{
     margin-top: 100px;
+    /* background-color: #7fffd4; */
+    background-color: #e3f4d5;
+    
 }
 
 img {
     width: auto;
     height: 300px;
+}
+
+input {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.cap {
+    text-transform: capitalize;
+}
+
+.hide {
+    /* display: none; */
+    visibility: hidden;
 }
